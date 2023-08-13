@@ -16,7 +16,6 @@
   font-weight: bold;
 }
 
-}
 ul {
   list-style-type: none;
 }
@@ -41,6 +40,14 @@ body{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .header{
   position: relative;
@@ -109,6 +116,7 @@ body{
   color: #b59f5b;
 }
 
+
 .burger_menu{
   position: relative;
   display: none;
@@ -151,6 +159,7 @@ body{
   padding-bottom: 130px;
   color: #fff;
 }
+
 
 .popup{
   display: flex;
@@ -332,6 +341,7 @@ body{
   background-color:#323232;
 }
 
+
 .trends {
   margin-bottom: 60px;
 }
@@ -390,7 +400,6 @@ body{
   background-color: #000;
   opacity: 0.6;
 }
-
 
 .card_container{
   padding: 35px 35px 15px;
@@ -519,7 +528,7 @@ body{
 }
 
 
-
+/* sidebar */
 .sidebar{
   width: 275px;
   display: block;
@@ -647,6 +656,7 @@ body{
   background-color:#323232;
 }
 
+/* subscribe */
 .subscribe{
   margin-bottom: 45px;
 }
@@ -684,6 +694,7 @@ body{
   background-color:#323232;
 }
 
+/* tags */
 .tags{
   margin-bottom: 45px;
 }
@@ -714,16 +725,13 @@ body{
   border: 3px solid #b59f5b;
 }
 
+/* themes */ 
 .themes{
   margin-bottom: 45px;
 }
 
 .themes_link{
   color: #000;
-}
-
-.themes-link:hover {
-    color: #b59f5b;
 }
 
 .themes_title{
@@ -745,6 +753,7 @@ body{
   font-weight: bold;
 }
 
+/* shop */
 .shop{
   padding-top: 60px;
 }
@@ -876,6 +885,7 @@ body{
 }
 
 
+/* footer */
 .social_network{
   margin-top: 70px;
   background-color:#f4f7f6;
@@ -917,7 +927,11 @@ body{
   background-image: url(../svg/003-tumblr.svg);
 }
 
+.twitter_link{
+  background-image: url(../svg/004-twitter.svg);
+}
 
+/* copyright */
 .copyright {
   margin-top: 40px;
   text-align: center;
@@ -931,14 +945,9 @@ body{
   color: #999999;
 }
 
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* ------------MEDIA------------ */ 
+
+/* media */ 
 @media (min-width: 641px) and (max-width: 1199px){
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
