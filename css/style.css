@@ -113,7 +113,7 @@ body{
 }
 
 .menu_item_link:hover{
-  color: #b59f5b;
+  text-decoration: underline;
 }
 
 /* BURGER */
