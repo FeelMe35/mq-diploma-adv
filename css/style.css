@@ -16,6 +16,13 @@
   font-weight: bold;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 ul {
   list-style-type: none;
 }
@@ -41,15 +48,7 @@ body{
   overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
+/* HEADER */ 
 .header{
   position: relative;
   width: 100%;
@@ -117,6 +116,7 @@ body{
   color: #b59f5b;
 }
 
+/* BURGER */
 
 .burger_menu{
   position: relative;
@@ -162,6 +162,7 @@ body{
 }
 
 
+/* POPUP */
 .popup{
   display: flex;
   justify-content: center;
@@ -343,6 +344,7 @@ body{
 }
 
 
+/* trends */ 
 .trends {
   margin-bottom: 60px;
 }
@@ -443,23 +445,23 @@ body{
 }
 
 
-.first-card{
+.card-1{
   background-image: url(../images/trend1.jpg)
 }
 
-.second-card{
+.card-2{
   background-image: url(../images/trend2.jpg)
 }
 
-.third-card{
+.card-3{
   background-image: url(../images/trend3.jpg)
 }
 
-.fourth-card{
+.card-4{
   background-image: url(../images/trend4.jpg)
 }
 
-
+/* posts */
 .post_container{
   display: flex;
   column-gap: 120px;
