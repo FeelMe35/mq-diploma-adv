@@ -346,14 +346,14 @@ body{
 
 /* trends */ 
 .trends {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .trends_title{
   display: block;
   position: relative;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1.45;
@@ -470,7 +470,7 @@ body{
 .posts{
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 58px;
   max-width: 775px;
 }
 
@@ -608,7 +608,7 @@ body{
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 
 /* search */
@@ -953,7 +953,7 @@ body{
     margin-bottom: 50px;
   }
   .container{
-    padding: 40px 35px 0;
+    padding: 49px 30px 4px 35px;
   }
   .header_logo{
     width: 50%;
@@ -979,12 +979,18 @@ body{
   .main{
     margin-bottom: 10px;
   }
+
+  .trend_card {
+    min-height: 239px;
+  }
+
   .trends{
     margin-bottom: 0;
   }
   .trends_title{
     font-size: 18px;
     line-height: 1.6;
+    margin: 0 auto 33px;
   }
   .trends_gallary{
     width: 100%;
@@ -995,12 +1001,13 @@ body{
   }
   .posts{
     width: calc(60% - 35px);
+    gap: 47px;
   }
   .post_list{
     width: 100%;
     position: relative;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 19px;
   }
   .post_list:not(:last-child)::after{
     content: "";
@@ -1017,8 +1024,8 @@ body{
     margin-right: 0;
   }
   .post_info{
-    display: block;
-    margin-bottom: 25px;
+    display: flex;
+    margin-bottom: 28px;
   }
   .post_text{
     padding-bottom: 19px;
@@ -1027,11 +1034,23 @@ body{
     width: 40%;
   }
   .new_posts{
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
   .subscribe{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
+
+  .themes_item {
+    padding: 12px 7px;
+  }
+  .tags {
+    margin-bottom: 30px;
+  }
+
+  .shop {
+    padding-top: 35px;
+  }
+
   .shop_container{
     padding-top: 0;
     margin: 0 auto;
@@ -1046,6 +1065,22 @@ body{
 
   .shop_item{
     width: calc(50% - (44px / 4));
+  }
+
+  .item_title {
+    font-size: 17px;
+  }
+
+  .item_descript {
+    margin-bottom: 12px;
+  }
+
+  .social_network {
+    margin-top: -18px;
+  }
+
+  .copyright {
+    margin-top: 52px;
   }
  
 }
@@ -1074,7 +1109,7 @@ body{
 @media (max-width: 640px){
   .header{
     background-image: url(../images/banner-mobile.jpg);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .header_container{
     flex-direction: column;
@@ -1111,6 +1146,11 @@ body{
   .shop_title{
     font-size: 16px;
   }
+
+  .trend_link_title {
+    font-size: 16px;
+  }
+
   .trends_gallary{
     flex-direction: column;
     gap: 3px;
@@ -1146,9 +1186,14 @@ body{
     margin-bottom: 15px;
     margin-right: 0;
   }
+
+  .post_title {
+    margin-bottom: 12px;
+  }
+
   .post_info{
-    display: block;
-    margin-bottom: 25px;
+    display: flex;
+    margin-bottom: 12px;
   }
   .post_text{
     padding-bottom: 25px;
@@ -1162,7 +1207,7 @@ body{
     margin-bottom: 60px;
   }
   .sidebar_title{
-    margin-bottom: 40;
+    margin-bottom: 40px;
   }
   .new_post_content{
     flex-direction: column;
@@ -1188,15 +1233,24 @@ body{
   .shop_item{
     width: 100%;
   }
+
+  .shop_item_info {
+    min-height: 227px;
+  }
  
   .item_title{
     font-size: 17px;
+  }
+  
+  .footer {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
   .trend_card {
     width: 100%;
+    min-height: 232px;
   }
 }
 
